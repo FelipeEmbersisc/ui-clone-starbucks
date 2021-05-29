@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Starbucks</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#">
+          <img src="assets/img/logo.png" class="logo" alt="Logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">What's New</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="about">
+          <h2>
+            It's not just coffee <br />
+            It's <span>Starbucks</span>
+          </h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+            dolore itaque numquam, laboriosam tempora explicabo veritatis in
+            neque, ad vel consequatur enim ab fugit soluta expedita commodi
+            harum nulla odit.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="image">
+          <img src="assets/img/img1.png" class="starbucks" alt="Imagem Café" />
+        </div>
+      </div>
+
+      <ul class="thumb">
+        <li>
+          <img
+            src="assets/img/thumb1.png"
+            onclick="imageSlider('assets/img/img1.png');changeCircleColor('#017143')"
+            alt="Thumb1"
+          />
+        </li>
+        <li>
+          <img
+            src="assets/img/thumb2.png"
+            onclick="imageSlider('assets/img/img2.png');changeCircleColor('#eb7495')"
+            alt="Thumb2"
+          />
+        </li>
+        <li>
+          <img
+            src="assets/img/thumb3.png"
+            onclick="imageSlider('assets/img/img3.png');changeCircleColor('#d752b1')"
+            alt="Thumb3"
+          />
+        </li>
+      </ul>
+      <ul class="network">
+        <li>
+          <a href="#">
+            <img src="assets/img/facebook.png" alt="Facebook logo" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/img/twitter.png" alt="Twitter logo" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/img/instagram.png" alt="Instagram logo" />
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
