@@ -4,7 +4,7 @@
 
   box-sizing: border-box;
 
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 section {
@@ -173,4 +173,58 @@ header ul li a {
   height: 100%;
   background: #017143;
   clip-path: circle(600px at right 800px);
+}
+
+@media screen and (max-width: 320px) {
+  section {
+    height: 100%;
+  }
+
+  header {
+    padding: 1.5rem 0 0 1.5rem;
+  }
+
+  header .logo {
+    max-width: 60px;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  .content {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .content .about {
+    margin-right: 2rem;
+  }
+
+  .content .about h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .content .image {
+    justify-content: center;
+
+    padding: 0;
+    margin-bottom: 2rem;
+
+    max-width: 200px;
+  }
+
+  .content .image img {
+    max-width: 200px;
+  }
+
+  .circle {
+    clip-path: circle(300px at center bottom);
+  }
+
+  .network {
+    display: none;
+    background: #017143;
+  }
 }
