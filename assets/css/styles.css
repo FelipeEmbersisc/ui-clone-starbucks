@@ -192,6 +192,22 @@ header ul li a {
     display: none;
   }
 
+  .toggle {
+    position: relative;
+    margin-right: 1.75rem;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+
+    background: url('/assets/img/menu.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: invert(1);
+  }
+
   .content {
     flex-direction: column;
     margin-top: 1rem;
