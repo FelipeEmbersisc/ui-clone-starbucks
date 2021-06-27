@@ -211,6 +211,9 @@ header ul li a {
   }
 
   .toggle.active {
+    position: fixed;
+    right: 0;
+
     background: url('/assets/img/close.png');
     background-size: 25px;
     background-position: center;
@@ -273,6 +276,28 @@ header ul li a {
 
   .network {
     display: none;
-    background: #017143;
+  }
+
+  ul.network.active {
+    position: fixed;
+    top: 90%;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    padding-left: 1.5rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+    background: transparent;
+
+    z-index: 11;
+  }
+
+  ul.network.active li {
+    filter: invert(0.8);
   }
 }
