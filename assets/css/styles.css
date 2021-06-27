@@ -175,7 +175,7 @@ header ul li a {
   clip-path: circle(600px at right 800px);
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   section {
     height: 100%;
   }
@@ -206,6 +206,38 @@ header ul li a {
     background-repeat: no-repeat;
 
     filter: invert(1);
+
+    z-index: 11;
+  }
+
+  .toggle.active {
+    background: url('/assets/img/close.png');
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+
+    z-index: 10;
+  }
+
+  header ul li a {
+    font-size: 1.5em;
+    margin: 8px 0;
   }
 
   .content {
