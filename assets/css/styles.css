@@ -181,7 +181,7 @@ header ul li a {
   }
 
   header {
-    padding: 1.5rem 0 0 1.5rem;
+    padding: 1.5rem 0 0 3rem;
   }
 
   header .logo {
@@ -272,6 +272,133 @@ header ul li a {
 
   .circle {
     clip-path: circle(300px at center bottom);
+  }
+
+  .network {
+    display: none;
+  }
+
+  ul.network.active {
+    position: fixed;
+    top: 90%;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    padding-left: 1.5rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+    background: transparent;
+
+    z-index: 11;
+  }
+
+  ul.network.active li {
+    filter: invert(0.8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    height: 100%;
+  }
+
+  header {
+    padding: 1.5rem 0 0 6rem;
+  }
+
+  header .logo {
+    max-width: 60px;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    margin-right: 1.75rem;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+
+    background: url('/assets/img/menu.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: invert(1);
+
+    z-index: 11;
+  }
+
+  .toggle.active {
+    position: fixed;
+    right: 0;
+
+    background: url('/assets/img/close.png');
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+
+    z-index: 10;
+  }
+
+  header ul li a {
+    font-size: 1.5em;
+    margin: 8px 0;
+  }
+
+  .content {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .content .about {
+    margin-right: 2rem;
+  }
+
+  .content .about h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .content .image {
+    justify-content: center;
+
+    padding: 0;
+    margin-bottom: 2rem;
+
+    max-width: 200px;
+  }
+
+  .content .image img {
+    max-width: 200px;
+  }
+
+  .circle {
+    clip-path: circle(400px at center bottom);
   }
 
   .network {
